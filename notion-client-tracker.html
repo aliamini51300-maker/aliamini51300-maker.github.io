@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Best Notion Template for Client Management in 2026 (Free vs Paid, Honest Comparison)</title>
+<meta name="description" content="Most Notion client trackers are half-built databases with no formulas. Here is what a client tracker actually needs, what you can build free in an hour, and where the paid templates save you a weekend.">
+<link rel="canonical" href="https://aliamini51300-maker.github.io/notion-client-tracker.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Best Notion Template for Client Management in 2026 (Free vs Paid, Honest Comparison)">
+<meta property="og:description" content="Most Notion client trackers are half-built databases with no formulas. Here is what a client tracker actually needs, what you can build free in an hour, and where the paid templates save you a weekend.">
+<meta property="og:image" content="https://soloforge-hxc0.onrender.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span>SoloForge</a>
+    <nav class="head-nav">
+      <a href="index.html#toolkits">Toolkits</a>
+      <a href="index.html#free">Free checklist</a>
+      <a href="index.html#posts">Articles</a>
+      <a href="https://soloforge-hxc0.onrender.com/">Store</a>
+    </nav>
+  </div>
+</header>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Best Notion Template for Client Management in 2026 (Free vs Paid, Honest Comparison)", "description": "Most Notion client trackers are half-built databases with no formulas. Here is what a client tracker actually needs, what you can build free in an hour, and where the paid templates save you a weekend.", "datePublished": "2026-11-24", "dateModified": "2026-11-24", "author": {"@type": "Organization", "name": "SoloForge", "url": "https://aliamini51300-maker.github.io/"}, "publisher": {"@type": "Organization", "name": "SoloForge", "logo": {"@type": "ImageObject", "url": "https://soloforge-hxc0.onrender.com/og.jpg"}}, "image": "https://soloforge-hxc0.onrender.com/og.jpg", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aliamini51300-maker.github.io/notion-client-tracker.html"}, "inLanguage": "en"}</script><main>
+<article class="post">
+  <span class="eyebrow">Article</span>
+  <h1>Best Notion Template for Client Management in 2026 (Free vs Paid, Honest Comparison)</h1>
+  <div class="meta">SoloForge · notion client tracker template, notion template for clients, best notion template freelance clients</div>
+  
+<p>Search for "Notion client tracker" and you will get three hundred templates. Almost all of them
+are the same six databases with empty columns and a light-blue cover image. None of them answer
+the question that actually matters: <em>who owes me money, and what do I do next?</em></p>
+
+<p>That is what this post is for. Not a list of links — a breakdown of what a client tracker needs
+to contain, a free version you can build yourself in about an hour, and an honest look at when
+paying for a template beats building one.</p>
+
+<h2>What a client tracker actually needs</h2>
+<p>Most "client tracker" templates are a contact list wearing a business costume. A tracker earns
+the name only when it answers four questions without you having to think:</p>
+<ol>
+  <li><strong>Who am I working with, and what is the status of each relationship?</strong></li>
+  <li><strong>What has been billed, what has been paid, and what is overdue?</strong></li>
+  <li><strong>What work is in flight, and what is the next action on it?</strong></li>
+  <li><strong>How much time went where, and was it billable?</strong></li>
+</ol>
+<p>If a template does not answer all four, it is a database. Most are.</p>
+
+<h2>The free build: four databases, not six</h2>
+<p>You can get 80% of the way in Notion's free plan. Here is the order I would do it in, because
+the order matters — each step makes the next one easier.</p>
+
+<h3>Step 1 — Clients</h3>
+<p>One row per client. The columns that earn their place: <em>Name</em> (title), <em>Status</em>
+(select: Lead, Active, Paused, Churned), <em>Rate</em> (number, currency), <em>Email</em>
+(email), and <em>Next action</em> (text). Everything else you can add later; resist the urge to
+build a CRM on day one.</p>
+
+<h3>Step 2 — Projects</h3>
+<p>One row per piece of work, related to the client who pays for it. <em>Project name</em>,
+<em>Client</em> (relation), <em>Status</em> (select: Scoping, In progress, In review, Delivered,
+Paid), <em>Start</em> and <em>Due</em> (dates), <em>Fee</em> (number), and <em>Paid</em>
+(checkbox). The <em>Paid</em> checkbox next to <em>Fee</em> is what makes the money view work.</p>
+
+<h3>Step 3 — Invoices</h3>
+<p>This is the database most templates skip and most people need. <em>Number</em>,
+<em>Client</em> (relation), <em>Project</em> (relation), <em>Amount</em> (number),
+<em>Issued</em> (date), <em>Due</em> (date), <em>Status</em> (select: Draft, Sent, Paid, Overdue),
+and one formula column: <em>Days overdue</em>.</p>
+
+<pre><code>if(prop("Status") != "Paid" and not empty(prop("Due")) and now() &gt; prop("Due"),
+   dateDiff(now(), prop("Due"), "days").toNumber(),
+   0)</code></pre>
+<p>That single formula is the whole point of the database. With it, you can sort any view by
+"who is hurting me most" instead of by invoice number.</p>
+
+<h3>Step 4 — Time log</h3>
+<p><em>Date</em>, <em>Client</em> (relation), <em>Project</em> (relation), <em>Task</em> (text),
+<em>Minutes</em> (number), and <em>Billable</em> (checkbox). This is the database that changes
+your prices, because it is the only one that tells you the truth about where your week went.</p>
+
+<blockquote>Six databases, twelve views and thirty formulas — that is what the paid
+<a href="https://aliamini51300-maker.github.io/post-notion-clients.html">Client OS for Notion</a>
+template ships with, and it is the difference between a tracker and a system.</blockquote>
+
+<h2>Free versus paid: an honest comparison</h2>
+<table>
+<thead><tr><th>&nbsp;</th><th>Build it free</th><th>Buy a template</th></tr></thead>
+<tbody>
+<tr><td>Cost</td><td>$0</td><td>$9–$19</td></tr>
+<tr><td>Setup time</td><td>3–6 hours</td><td>20 minutes</td></tr>
+<tr><td>Formulas</td><td>You write them</td><td>Pre-built, tested</td></tr>
+<tr><td>Views</td><td>You invent them</td><td>12 ready-made</td></tr>
+<tr><td>Importing your data</td><td>Manual, painful</td><td>CSV, one click</td></tr>
+<tr><td>Risk of a broken formula</td><td>High</td><td>None</td></tr>
+</tbody>
+</table>
+<p>The honest version: if you enjoy building systems, build one. If you would rather spend that
+afternoon on a client, buy one. The templates are not clever — they are <em>finished</em>, which
+is a different thing and worth paying for when your rate is $60 an hour.</p>
+
+<h2>What to look for in any client tracker template</h2>
+<ul>
+  <li><strong>Real formulas, not empty columns.</strong> If the demo screenshot shows no computed
+  fields, you will be writing them yourself and paying for nothing.</li>
+  <li><strong>CSV import files.</strong> A template you have to retype into is a document, not a
+  system. Ours ships six CSVs with the correct column headers.</li>
+  <li><strong>A setup guide that says what to do.</strong> "Import these six files in this order,
+  then set your currency" beats a video that shows a dashboard.</li>
+  <li><strong>Views for the three jobs.</strong> Pipeline, overdue invoices, and this week's work.
+  If a template has one big table view, it has not been thought about.</li>
+</ul>
+
+<h2>What you actually need before you build anything</h2>
+<p>Whichever way you go, start with one page — the review you do on a Monday morning. Six
+questions, twenty minutes. If you do not have that habit yet, the tracker will not save you:
+you will file invoices you never chased and call it a system. The
+<a href="https://soloforge-hxc0.onrender.com/free/weekly-review">Monday Review checklist</a>
+is free, and it is the habit that makes the rest of this worth building.</p>
+
+  
+<div class="cta-box">
+  <h3>Get the free one-page checklist</h3>
+  <p>The Monday Review — six questions, the three numbers, a red-flag checklist and a
+  week-ahead planner. PDF and Markdown, free, no account.</p>
+  <div class="cta-row">
+    <a class="btn" href="https://soloforge-hxc0.onrender.com/free/weekly-review">Download it free</a>
+    <a class="btn" href="https://soloforge-hxc0.onrender.com/">See the toolkits</a>
+  </div>
+</div>
+  <h2>More from SoloForge</h2>
+  <ul>
+        <li><a href="post-notion-clients.html">The Notion template I use to track freelance clients — and what I would change</a></li>
+    <li><a href="post-hourly-rate.html">What your real hourly rate is (most freelancers never calculate it)</a></li>
+    <li><a href="post-monday-review.html">The 20-minute Monday review that keeps a solo business from drifting</a></li>
+    <li><a href="post-proposal-template.html">How to write a freelance proposal that gets accepted (template included)</a></li>
+    <li><a href="post-invoice-tracker.html">The invoice tracker I wish I had started with (and the 30-day rule)</a></li>
+    <li><a href="post-time-tracking.html">Track your time for one month. It will change what you charge.</a></li>
+    <li><a href="post-notion-invoice-tracker.html">A Notion invoice tracker that tells you which client to chase</a></li>
+    <li><a href="freelance-cash-flow-spreadsheet.html">The Freelance Cash Flow Spreadsheet I Actually Use (Runway, Tax, and a 12-Month Forecast)</a></li>
+    <li><a href="raise-your-freelance-rate.html">How to Raise Your Freelance Rate Without Losing Clients (The Numbers to Bring)</a></li>
+  </ul>
+</article>
+</main>
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div>
+      <strong>SoloForge</strong> — digital toolkits for independent professionals.
+      <br>Instant download · Lifetime updates · 30-day refund.
+    </div>
+    <div>
+      <a href="https://soloforge-hxc0.onrender.com/">Store</a> · <a href="https://soloforge-hxc0.onrender.com/free/weekly-review">Free checklist</a> ·
+      <a href="mailto:aliamini51300@gmail.com">Support</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

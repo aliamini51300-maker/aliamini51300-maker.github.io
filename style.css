@@ -52,6 +52,9 @@ section{padding:62px 0}
 .card-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .price{font-weight:800;font-size:20px}
 .price-was{text-decoration:line-through;color:#94a3b8;font-weight:500;font-size:15px;margin-right:6px}
+.see-inside{display:inline-block;margin-top:12px;font-size:14px;font-weight:600;
+  color:var(--indigo);text-decoration:none}
+.see-inside:hover{text-decoration:underline}
 .freebie{background:linear-gradient(150deg,#eef2ff,#f8fafc 60%,#ecfeff);border:1px solid #e0e7ff;
   border-radius:20px;padding:40px}
 .freebie ul{margin:14px 0 22px;padding-left:20px;color:var(--slate)}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SoloForge — articles for independent professionals</title>
+    <link>https://aliamini51300-maker.github.io/</link>
+    <description>Short, practical pieces about the numbers and systems behind a small business.</description>
+    <language>en</language>
+    <atom:link href="https://aliamini51300-maker.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The Notion template I use to track freelance clients — and what I would change</title>
+      <link>https://aliamini51300-maker.github.io/post-notion-clients.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/post-notion-clients.html</guid>
+      <description>Six linked databases, twelve views and one time-log column that revealed a fifth of my working time was unbillable admin. Here is the setup, in detail.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>What your real hourly rate is (most freelancers never calculate it)</title>
+      <link>https://aliamini51300-maker.github.io/post-hourly-rate.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/post-hourly-rate.html</guid>
+      <description>You billed $4,000 for a forty-hour project and thought you made $100 an hour. You actually made $34. Here is the sheet that shows the real number.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>The 20-minute Monday review that keeps a solo business from drifting</title>
+      <link>https://aliamini51300-maker.github.io/post-monday-review.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/post-monday-review.html</guid>
+      <description>Six questions, twenty minutes, one page. The weekly review I run every Monday, and the free one-page checklist that does it with me.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>How to write a freelance proposal that gets accepted (template included)</title>
+      <link>https://aliamini51300-maker.github.io/post-proposal-template.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/post-proposal-template.html</guid>
+      <description>Most proposals lose on scope, not price. The four-section structure I use, what to include, what to leave out, and the prompts to write it in an hour.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>The invoice tracker I wish I had started with (and the 30-day rule)</title>
+      <link>https://aliamini51300-maker.github.io/post-invoice-tracker.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/post-invoice-tracker.html</guid>
+      <description>An unpaid invoice is worth less every week it sits there. A simple tracker, the aging table that tells you which client to chase, and the rule that fixed it.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>Track your time for one month. It will change what you charge.</title>
+      <link>https://aliamini51300-maker.github.io/post-time-tracking.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/post-time-tracking.html</guid>
+      <description>I added one column to my time log — billable or not — and found that a fifth of my working time was admin. Here is how to run the same experiment.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>A Notion invoice tracker that tells you which client to chase</title>
+      <link>https://aliamini51300-maker.github.io/post-notion-invoice-tracker.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/post-notion-invoice-tracker.html</guid>
+      <description>Six linked databases, twelve views, thirty formulas. The Notion setup I use to run clients, projects, invoices and time — and why the invoice aging view matters most.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>Best Notion Template for Client Management in 2026 (Free vs Paid, Honest Comparison)</title>
+      <link>https://aliamini51300-maker.github.io/notion-client-tracker.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/notion-client-tracker.html</guid>
+      <description>Most Notion client trackers are half-built databases with no formulas. Here is what a client tracker actually needs, what you can build free in an hour, and where the paid templates save you a weekend.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>The Freelance Cash Flow Spreadsheet I Actually Use (Runway, Tax, and a 12-Month Forecast)</title>
+      <link>https://aliamini51300-maker.github.io/freelance-cash-flow-spreadsheet.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/freelance-cash-flow-spreadsheet.html</guid>
+      <description>Profit tells you whether you made money. Cash tells you whether you can keep going. Here is the five-tab cash flow spreadsheet I use, the formulas in each tab, and the three numbers to check every month.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+    <item>
+      <title>How to Raise Your Freelance Rate Without Losing Clients (The Numbers to Bring)</title>
+      <link>https://aliamini51300-maker.github.io/raise-your-freelance-rate.html</link>
+      <guid isPermaLink="true">https://aliamini51300-maker.github.io/raise-your-freelance-rate.html</guid>
+      <description>Most freelancers raise their rate by guessing and then apologising. Here is the arithmetic of a rate increase — the utilisation number, the value-based argument, the email script, and what to do when a client says no.</description>
+      <pubDate>2026-11-26T09:00:00+00:00</pubDate>
+    </item>
+  </channel>
+</rss>

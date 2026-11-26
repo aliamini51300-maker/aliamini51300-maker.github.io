@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Freelance Cash Flow Spreadsheet I Actually Use (Runway, Tax, and a 12-Month Forecast)</title>
+<meta name="description" content="Profit tells you whether you made money. Cash tells you whether you can keep going. Here is the five-tab cash flow spreadsheet I use, the formulas in each tab, and the three numbers to check every month.">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<main>
+<article class="post">
+  <h1>The Freelance Cash Flow Spreadsheet I Actually Use (Runway, Tax, and a 12-Month Forecast)</h1>
+  
+<p>Most freelance spreadsheets are a list of income in one tab and a list of expenses in another,
+and the total at the bottom is called "profit". That number is comfortable and it is close to
+useless. Two things happen to a self-employed person's money that a profit figure cannot show
+you: the tax bill arrives six months after the income, and a client pays sixty days after the
+invoice.</p>
+
+<p>A cash-flow spreadsheet is a different animal. It answers one question: <em>on any given
+month, will money actually be in my account?</em></p>
+
+<h2>Why profit lied to me</h2>
+<p>In one month I invoiced $8,400, spent $1,900, and looked at a comfortable $6,500 surplus. That
+month also contained: a quarter of income tax, $2,100 of software renewals that all landed on the
+same day, and two clients who paid in ninety days instead of thirty. The account balance at the
+end of the month was $900.</p>
+
+<p>Nothing was wrong with the business. The spreadsheet was just measuring the wrong thing. A
+profit statement measures accruals — work done, work invoiced. A bank account measures cash. For
+a freelancer the second one is what actually has to survive.</p>
+
+<h2>The five tabs</h2>
+
+<h3>Tab 1 — Income</h3>
+<p>Columns: <em>Date received</em>, <em>Client</em>, <em>Invoice number</em>, <em>Amount</em>,
+<em>Currency</em>, <em>Exchange rate</em>, <em>Amount in home currency</em>. One row per payment
+received, not per invoice sent. If you invoice on the 1st and get paid on the 28th, the money
+arrives on the 28th and this tab records the 28th.</p>
+<pre><code>Amount (home currency) = Amount * Exchange rate</code></pre>
+<p>Keep the exchange-rate column even if you invoice in your own currency. The moment a client
+pays in dollars and your bank converts it, the number in your account will not match the number
+on the invoice, and you want to know that difference rather than discover it.</p>
+
+<h3>Tab 2 — Expected income (the pipeline)</h3>
+<p>Columns: <em>Client</em>, <em>Invoice number</em>, <em>Amount</em>, <em>Date issued</em>,
+<em>Expected payment date</em>, <em>Days overdue</em>, <em>Status</em>. This tab is your
+collection pipeline and it should be the first thing you look at on a Monday.</p>
+<pre><code>Days overdue = IF(Status &lt;&gt; "Paid", MAX(0, TODAY() - Expected payment date), 0)</code></pre>
+<p>The rule that saved me: anything past thirty days gets a polite email the same day it crosses
+the line, and anything past sixty days gets a phone call. Not to be difficult — to be
+professional. Money that is late is usually late because the invoice was not chased, and the
+chase is the thing that has to be systematic.</p>
+
+<h3>Tab 3 — Expenses</h3>
+<p>Columns: <em>Date</em>, <em>Category</em> (select: Software, Equipment, Tax, Insurance,
+Subcontractors, Marketing, Travel, Other), <em>Description</em>, <em>Amount</em>, <em>Recurring?</em>
+(checkbox), <em>Deductible?</em> (checkbox). The two checkboxes are what turn this tab into
+something useful at tax time, because by March you will not remember what the $47 charge in
+October was.</p>
+
+<h3>Tab 4 — Tax reserve</h3>
+<p>One row per month. <em>Month</em>, <em>Income in month</em>, <em>Reserve %</em> (put in your
+actual marginal rate plus a margin — 30% is a common starting point, 25% if you are genuinely
+below the threshold), <em>Reserved</em>, <em>Balance</em>. The formula is deliberately boring:</p>
+<pre><code>Reserved = Income in month * Reserve %
+Balance  = previous Balance + Reserved - Tax set aside</code></pre>
+<p>The point of a separate tab is that the money is <em>moved</em>. Transfer the reserved amount
+to a second account the day you calculate it. Money in a spreadsheet is a note; money in a
+different account is a decision.</p>
+
+<h3>Tab 5 — 12-month forecast</h3>
+<p>This is the tab that changes behaviour, because it shows you the bad month coming. Rows are
+months, columns are: <em>Expected income</em> (from Tab 2, grouped by expected payment date),
+<em>Expected expenses</em> (from Tab 3, grouped by month and recurring flag), <em>Tax set-aside</em>,
+<em>Net</em>, <em>Opening balance</em>, <em>Closing balance</em>.</p>
+<pre><code>Closing balance = Opening balance + Expected income
+                   - Expected expenses - Tax set aside</code></pre>
+<p>When the closing balance for month four goes negative, you have two months to fix it: send the
+invoice that has been sitting, push the retainer, or delay a purchase. That is a decision you can
+make calmly in March. Finding out in April is not a decision, it is a reaction.</p>
+
+<blockquote>Runway, invoice aging and a twelve-month forecast with live formulas —
+that is the <a href="https://soloforge-hxc0.onrender.com/product/cashflow-tracker">Cash-Flow
+Command Center</a>, built in a spreadsheet you can open today.</blockquote>
+
+<h2>The three numbers to check every month</h2>
+<p>You do not need to read five tabs. Three numbers, on the first working day of the month:</p>
+<ol>
+  <li><strong>Closing balance, forecast.</strong> What will this month end with? If it is
+  negative, you have work to do.</li>
+  <li><strong>Total overdue.</strong> Sum of Tab 2's days-overdue column, weighted by amount.
+  This is the number you can change today.</li>
+  <li><strong>Tax reserve balance.</strong> What you have actually set aside against what you
+  owe. The gap between these two is how tax season turns into a crisis.</li>
+</ol>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li><strong>Recording income when it is invoiced.</strong> This is the mistake that makes a cash
+  spreadsheet behave like a profit statement. Income enters Tab 1 on the day the money lands.</li>
+  <li><strong>Forgetting quarterly tax.</strong> If you are in a regime where tax is paid
+  quarterly, the reserve is not an annual number you work out in April — it is a monthly transfer.</li>
+  <li><strong>One big table.</strong> Five tabs is not bureaucracy. Each tab has one job, and the
+  formula in Tab 5 reads from Tabs 2 and 3. Merging them is how forecasts break.</li>
+  <li><strong>Never opening it.</strong> A spreadsheet that is only correct on the day you build
+  it is a diary, not a system. Twenty minutes on the first of the month is the whole commitment.</li>
+</ul>
+
+<p>The habit that keeps all of this alive is the same twenty-minute weekly review. It is free:
+<a href="https://soloforge-hxc0.onrender.com/free/weekly-review">the Monday Review
+checklist</a>.</p>
+
+</article>
+</main>
+</body>
+</html>
